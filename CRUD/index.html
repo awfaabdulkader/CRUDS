@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d4bf601ed.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <header id="ConHeader">
+        <div id="ULCon">
+            <img src="LogoSpider.png" alt="your browser not accepting logo " id="Logo">
+            <i class="fa-solid fa-moon fa-sm sun" style="color: #ffffff;" id="dark"></i>
+            <ul id="MenuInfo">
+                <li class="listinfo">SignIn
+                <li>
+                <li class="listinfo">SignUp</li>
+            </ul>
+        </div>
+    </header>
+    <div id="controlFlex">
+        <section class="ControlSectionI">
+
+            <div id="ControlFormI">
+
+                <form action="" id="FormI">
+
+                    <div id="UlInput">
+                        <input onkeyup="SumTotal()" placeholder="Title" type="text" class="LiInput" id="TitleTexes">
+                        <input onkeyup="SumTotal()" placeholder="Price" type="number" class="LiInput" id="Price">
+                        <input onkeyup="SumTotal()" placeholder="ADS" type="number" class="LiInput" id="ADS">
+                        <input onkeyup="SumTotal()" placeholder="Taxes" type="number" class="LiInput" id="Taxes">
+                        <input onkeyup="SumTotal()" placeholder="Discount" type="number" class="LiInput" id="Discount">
+                        <div class="testI">
+
+
+                            <p class="TotalIn" id="Total"> Total</p>
+                        </div>
+                        <input placeholder="Count" type="number" class="LiInput" id="count">
+                        <input placeholder="Category" type="text" class="LiInput" id="Category">
+                        <button class="CreateIN sr " id="Create">Create</button>
+                        <input onkeyup="DataSearch(this.value)" placeholder=" search" type="text" class="LiInput" id="search">
+                        <div class="srcs">
+                            <button type="button" class="Search srII" id="bytitle" onclick="GetIdSearch(this.id)">  Search By Title</title></button>
+                            <button type="button" class="Search srII" id="bycategory" onclick="GetIdSearch(this.id)">Search By Category</button>
+
+
+                        </div>
+
+                        <button class="Delet sr " id="Delet" > Delet</button>
+
+
+                </form>
+            </div>
+        </section>
+        <section class="sectionUl">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th class="elemLi" id="IdRE">ID</th>
+                        <th class="elemLi" id="TitleResultats">Title</th>
+                        <th class="elemLi" id="PriceResultats">Price</th>
+                        <th class="elemLi" id="TaxesResultats">Taxes</th>
+                        <th class="elemLi" id="ADSResultats">ADS</th>
+                        <th class="elemLi" id="DiscountResultats">Discount</th>
+                        <th class="elemLi" id="IdRE">Total</th>
+                        <th class="elemLi" id="IdRE">Category</th>
+                        <th class="elemLi" id="IdRE">Delet</th>
+                        <th class="elemLi" id="IdRE">Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Data rows will be added here using JavaScript -->
+                </tbody>
+            </table>
+
+        </section>
+        <section id="scroll">
+            <button id="btnScroll"><i class="fa-solid fa-caret-up" style="color: #000000; " id="ScrollI"></i></button>
+        </section>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
